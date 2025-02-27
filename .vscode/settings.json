@@ -1,3 +1,6 @@
 {
-    "dotnet.defaultSolution": "SingleAgent.sln"
+    "dotnet.defaultSolution": "SingleAgent.sln",
+    "cSpell.words": [
+        "agentnames"
+    ]
 }
