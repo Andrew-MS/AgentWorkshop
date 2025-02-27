@@ -63,11 +63,12 @@ public class TestFixture : IDisposable
     public void CreateKernel(string service){
         _builder = Kernel.CreateBuilder();
         var cred = new DefaultAzureCredential();
+        var cliCred = new AzureCliCredential();
         _builder.AddAzureOpenAIChatCompletion(
             MODEL_DEPLOYMENT,
             AZURE_OPENAI_ENDPOINT
             ,
-             cred
+             cliCred
         );
         _builder.AddAzureOpenAITextEmbeddingGeneration(
             MODEL_EMBEDDING
